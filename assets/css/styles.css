@@ -1,0 +1,229 @@
+/* <!-- Aqui começa os styles home. --> */
+
+.home-content {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 2.5fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  top: 100rem;
+}
+.intro-img {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+.home-text-content h6 {
+  width: 100%;
+  color: #e3e3e3;;
+  text-shadow: 
+  -1px -1px 1px #000000cb, 
+  -1px 1px 1px #000000cb,                    
+   1px -1px 1px #000000cb,                  
+   1px 0px 1px #ff0000cb;
+   margin-top: 10rem;
+   letter-spacing: 0.1rem;
+}
+
+.home-text-content h3 {
+  text-shadow: 0.1rem 0.1rem 0.2rem black, 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+
+.home-text-content p {
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  font-weight: 900;
+  /* border: 1px solid red; */
+  /* color: rgb(205, 138, 138) */
+  color: white;;
+  letter-spacing: 1px;
+  -webkit-text-stroke-width: 0.2px; /* largura da borda */
+  -webkit-text-stroke-color: #ffc1c1; /* cor da borda */
+}
+.banner:hover
+{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 1000ms ease-in-out;
+}
+
+
+.about-container {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 3px 3px rgb(47, 46, 46), -1em 0.4em rgba(0, 0, 0, 0.478);
+}
+
+
+
+.botao-principal {
+  display: inline-block;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.botao-principal a {
+  display: inline-block;
+  border: 2px solid rgba(255, 0, 0, 0.493);
+  padding: 2rem;
+  background-color: #0a0a0ad5;
+}
+
+img, p {
+  display: inline-block;
+}
+
+.botao-github:hover, .botao-linkedin:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 800ms ease-in-out;
+}
+
+a:hover {
+  background-color: #c4c4c444;
+}
+
+.image-content {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.image-content img {
+  margin-top: 20px;
+  height: 300px;
+}
+.image-content img:hover {
+  transform: scale(0.8);
+  border-radius: 50%;
+  box-shadow: 1px 1px rgb(0, 0, 0),
+  2px 2px rgb(0, 0, 0), 
+  3px 3px rgb(0, 0, 0),
+  4px 4px rgb(0, 0, 0),
+  5px 5px rgb(0, 0, 0),
+  6px 6px rgb(0, 0, 0),
+  2px 2px rgb(0, 0, 0);
+  transition: all 1000ms ease-in-out;
+}
+
+.about-content {
+  height: 30%;
+  width: 100%;
+}
+
+.about-content h1 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 1.5rem;
+  margin-top: 7rem;
+  margin-left: 2.5rem;
+  font-weight: 1000px;
+}
+
+.about-content2 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.about-content2 p {
+  font-weight: 1200px;
+  width: 90%;
+  justify-content: center;
+}
+
+.about-buttons {
+  display: flex;
+  margin-top: 35px;
+  margin-left: 25px;
+  gap: 60px;
+}
+.about-buttons a {
+  border: 2px solid rgba(255, 0, 0, 0.374);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  font-weight: 1200px;
+}
+
+.about-buttons p {
+  font-weight: 1200px;
+}
+
+.about-buttons a:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 800ms ease-in-out;
+}
+
+.projects {
+  background-color: #000000;
+  display: block;
+  padding-top: 90px;
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 90px;
+}
+.projects-cards {
+  width: 540px;
+}
+.projects-cards h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700px;
+  margin-top: 40px;
+}
+.projects-cards p {
+  font-family: "Inter", sans-serif;
+  font-size: 20.8px;
+  font-weight: 700px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.projects-cards span {
+color: #00d2df;
+padding-bottom: 40px;
+}
+.projects-cards img {
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.064), -1em 0 .4em rgb(255, 255, 4);
+  }
+
+.projects-cards img:hover {
+  transform: scale(0.8);
+  transition: all 800ms ease-in-out;
+}
+
+.projetos__card-button {
+  margin-top: 30px;
+  margin-left: 100px;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(255, 255, 4, 0.374);
+  width: 25%;
+}
+
+.projects h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700px;
+  margin-bottom: 50px;
+}
+
+.projets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}

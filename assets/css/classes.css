@@ -1,0 +1,41 @@
+.main-bg {
+  background-image: url(/TemplateProject2/assets/img/main-background.svg);
+  background-position: center center;
+  background-size: auto;
+  color: var(--white-color);
+}
+
+.black-bg {
+  background-color: var(--black-trans);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white-bg {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+/* .spacing {
+  height: 100px;
+} */
+
+.menu-spacing {
+  height: 10.8rem;
+  width: 100px;
+  background-color: rgba(0, 0, 255, 0);
+}
+
