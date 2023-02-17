@@ -42,3 +42,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+img, p {
+  display: inline-block;
+}
+
