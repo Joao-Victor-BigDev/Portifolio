@@ -31,12 +31,14 @@
    1px 0px 1px #ff0000cb;
    margin-top: 10rem;
    letter-spacing: 0.1rem;
+   font-size: 3rem;
 }
 
 .home-text-content h3 {
   text-shadow: 0.1rem 0.1rem 0.2rem black, 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
   color: white;
   letter-spacing: 0.1rem;
+  font-size: 4.5rem;
 }
 
 
@@ -205,7 +207,7 @@
 }
 
 .projects-cards span {
-color: #00d2df;
+color: rgba(255, 255, 4, 0.975);
 padding-bottom: 40px;
 }
 .projects-cards img {
@@ -296,4 +298,10 @@ padding-bottom: 40px;
 
 .box img {
   padding: 1.5rem;
+}
+
+footer {
+  padding: 3.5rem;
+  text-align: center;
+  background-color: black;
 }
