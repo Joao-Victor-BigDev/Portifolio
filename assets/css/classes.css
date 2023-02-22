@@ -1,5 +1,5 @@
 .main-bg {
-  background-image: url(/TemplateProject2/assets/img/main-background.svg);
+  background-image: url(assets/img/main-background.svg);
   background-position: center center;
   background-size: auto;
   color: var(--white-color);
