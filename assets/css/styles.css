@@ -1,13 +1,19 @@
 /* <!-- Aqui começa os styles home. --> */
 
+.home {
+  display:flex;
+  max-width: 128rem;
+  justify-content: center;
+  align-items: center ;
+  margin: 0 auto;
+}
+
 .home-content {
   display: grid;
-  min-height: 100vh;
   grid-template-columns: 2.5fr 1.5fr;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
   gap: var(--gap);
-  top: 100rem;
+  padding: 4rem;
 }
 .intro-img {
   display: flex;
@@ -78,13 +84,16 @@
 }
 
 /* <!-- Aqui começa os about styles. --> */
+
 .about-container {
   display: flex;
-  width: 60%;
-  height: 60%;
+  max-width: 128rem;
+  min-height: 70vh;
   background-color: white;
   margin: 0 auto;
   box-shadow: 3px 3px rgb(47, 46, 46), -1em 0.4em rgba(0, 0, 0, 0.478);
+  padding: 4rem;
+  margin-top: 3rem;
 }
 
 .image-content {
@@ -107,6 +116,10 @@
   6px 6px rgb(0, 0, 0),
   2px 2px rgb(0, 0, 0);
   transition: all 1000ms ease-in-out;
+}
+
+.about {
+  min-width: 100vh;
 }
 
 .about-content {
@@ -164,11 +177,14 @@
 
 .projects {
   background-color: #000000;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-top: 90px;
-  padding-left: 500px;
-  padding-right: 500px;
   padding-bottom: 90px;
+}
+
+.projects h1 {
+  margin-top: 4rem;
 }
 .projects-cards {
   width: 540px;
@@ -221,10 +237,63 @@ padding-bottom: 40px;
   font-size: 24px;
   font-weight: 700px;
   margin-bottom: 50px;
+  align-self: center;
 }
 
 .projets-container {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   gap: 10%;
+}
+
+/* <!-- Aqui começa os Contato styles. --> */
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content h2 {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.icons {
+  display: flex;
+  background-color: #8e8e8e30;
+  padding: 10rem;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+  justify-content: center;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  transition: all 500ms ease-in-out;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.icon a:first-child {
+  margin-bottom: 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+.box img {
+  padding: 1.5rem;
 }

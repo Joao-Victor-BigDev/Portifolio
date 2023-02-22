@@ -15,9 +15,6 @@
 .white-bg {
   background-color: var(--white-color);
   color: var(--black-color);
-  height: 8rem;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .main-content {
@@ -27,6 +24,7 @@
 
 .section {
   min-height: 100vh;
+  align-self: center;
 }
 
 /* .spacing {
@@ -34,8 +32,7 @@
 } */
 
 .menu-spacing {
-  height: 10.8rem;
-  width: 100px;
+  height: 12rem;
   background-color: rgba(0, 0, 255, 0);
 }
 
