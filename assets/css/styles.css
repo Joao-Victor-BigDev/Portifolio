@@ -93,7 +93,7 @@
   min-height: 70vh;
   background-color: white;
   margin: 0 auto;
-  box-shadow: 3px 3px rgb(47, 46, 46), -1em 0.4em rgba(0, 0, 0, 0.478);
+  box-shadow: 3px 3px rgb(47, 46, 46), -1em 0.4em rgba(169, 0, 0, 0.803);
   padding: 4rem;
   margin-top: 3rem;
 }
@@ -157,7 +157,7 @@
   gap: 20px;
 }
 .about-buttons a {
-  border: 2px solid rgba(255, 0, 0, 0.374);
+  border: 2px solid rgba(255, 0, 0, 0.444);
   background-color: #000000;
   color: rgb(255, 255, 255);
   padding: 25px;
@@ -211,12 +211,13 @@ color: rgba(255, 255, 4, 0.975);
 padding-bottom: 40px;
 }
 .projects-cards img {
-  box-shadow: 3px 3px rgba(255, 255, 255, 0.064), -1em 0 .4em rgba(255, 255, 4, 0.255);
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.064), -1em 0 .4em rgba(255, 0, 0, 0.374);
   }
 
 .projects-cards img:hover {
-  transform: scale(0.8);
-  transition: all 800ms ease-in-out;
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+  border: solid white 0.08rem;
 }
 
 .projetos__card-button {
