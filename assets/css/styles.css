@@ -9,15 +9,38 @@
 }
 
 .home-content {
-  display: grid;
-  grid-template-columns: 2.5fr 1.5fr;
+  display: flex;
+  flex-wrap: wrap;
   align-self: center;
+  align-content: center;
+  justify-content: center;
   gap: var(--gap);
   padding: 4rem;
 }
+@media only screen and (max-width: 1300px) {
+  .home-content {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
+  .about-container {
+    flex-flow: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-text-content {
+    max-width: 900px;
+  }
+}
+
 .intro-img {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.home-text-content {
+  max-width: 680px;
 }
 
 
@@ -32,6 +55,12 @@
    margin-top: 10rem;
    letter-spacing: 0.1rem;
    font-size: 3rem;
+}
+
+@media only screen and (max-width: 1269px) {
+  .home-text-content h6 {
+    margin-top: 0rem;
+  }
 }
 
 .home-text-content h3 {
@@ -90,7 +119,6 @@
 .about-container {
   display: flex;
   max-width: 128rem;
-  min-height: 70vh;
   background-color: white;
   margin: 0 auto;
   box-shadow: 3px 3px rgb(47, 46, 46), -1em 0.4em rgba(169, 0, 0, 0.803);
@@ -118,15 +146,6 @@
   6px 6px rgb(0, 0, 0),
   2px 2px rgb(0, 0, 0);
   transition: all 1000ms ease-in-out;
-}
-
-.about {
-  min-width: 100vh;
-}
-
-.about-content {
-  height: 30%;
-  width: 100%;
 }
 
 .about-content h1 {
@@ -189,8 +208,12 @@
   margin-top: 4rem;
 }
 .projects-cards {
+  display: grid;
   width: 540px;
+  justify-content: center;
+  align-items: center;
 }
+  
 .projects-cards h2 {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -212,11 +235,11 @@ padding-bottom: 40px;
 }
 .projects-cards img {
   box-shadow: 3px 3px rgba(255, 255, 255, 0.064), -1em 0 .4em rgba(255, 0, 0, 0.374);
+  transition: 0.3s;
   }
 
 .projects-cards img:hover {
-  transform: scale(1.1);
-  transition: all 400ms ease-in-out;
+  transform: scale(1.1) rotate(1deg);
   border: solid white 0.08rem;
 }
 
@@ -230,24 +253,26 @@ padding-bottom: 40px;
   margin-left: 3rem;
 }
 
-.projetos__card-button img:hover {
-  transform: scale(0.8);
-  transition: all 800ms ease-in-out;
-}
-
 .projects h1 {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-weight: 700px;
   margin-bottom: 50px;
   align-self: center;
 }
 
-.projets-container {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
+.projects-container {
+  display: flex;
+  margin-top: 75px;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* <!-- Aqui começa os Contato styles. --> */
