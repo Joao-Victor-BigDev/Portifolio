@@ -20,17 +20,20 @@
 @media only screen and (max-width: 1300px) {
   .home-content {
     flex-direction: column-reverse;
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-left: 0rem;
   }
   .about-container {
     flex-flow: column;
   }
+
 }
 
 @media only screen and (max-width: 1200px) {
   .home-text-content {
     max-width: 900px;
+    padding: 5rem;
+    margin-left: 3rem;
   }
 }
 
@@ -133,7 +136,6 @@
 
 .image-content img {
   margin-top: 20px;
-  height: 300px;
 }
 .image-content img:hover {
   transform: scale(0.8);
