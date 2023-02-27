@@ -15,7 +15,6 @@
   align-content: center;
   justify-content: center;
   gap: var(--gap);
-  padding: 4rem;
 }
 @media only screen and (max-width: 1300px) {
   .home-content {
@@ -50,8 +49,8 @@
     content: '☰';
     position: fixed;
     z-index: 2;
-    right: 2rem;
-    top: 2rem;
+    right: 3rem;
+    top: 3rem;
     background-color: var(--black-trans);
     color: var(--white-color);
     font-size: 3rem;
@@ -72,14 +71,56 @@
   .banner {
     height: 300px;
   }
+  .image-content img {
+    display: flex;
+    margin: 0 auto;
+  }
+  .menu-spacing {
+    height: 0;
+  }
 }
+
+@media only screen and (max-width: 720px) {
+  #about-buttons {
+    gap: 5px;
+  }
+
+  #about-buttons a {
+    padding: 5px;
+  }
+  
+  .about-container .about-content h1 {
+    line-height: 5rem;
+  }
+
+  .image-content img {
+    height: 150px;
+  }
+
+  .projects-container .projects-cards {
+    padding: 3px;
+    width: 0px;
+  }
+  .projeto-img {
+    height: 100px;
+  }
+  .contact-content .icons {
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .banner {
+    height: 200px;
+  }
+}
+
 
 
 @media only screen and (max-width: 1200px) {
   .home-text-content {
-    max-width: 900px;
-    padding: 5rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
