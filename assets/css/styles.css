@@ -16,6 +16,15 @@
   justify-content: center;
   gap: var(--gap);
 }
+
+@media only screen and (max-width: 1350px) {
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .home-content {
     flex-direction: column-reverse;
@@ -41,8 +50,6 @@
     display: none;
   }
   .close-menu {
-    /* position: fixed;
-    z-index: 2; */
     display:none;
   }
   .close-menu-label::after {
@@ -83,6 +90,7 @@
 @media only screen and (max-width: 720px) {
   #about-buttons {
     gap: 5px;
+    margin-left: 0px;
   }
 
   #about-buttons a {
@@ -115,12 +123,14 @@
 }
 
 
-
 @media only screen and (max-width: 1200px) {
   .home-text-content {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 2rem;
+  }
+  .home-content .home-text-content h6 {
+    margin-top: 0rem;
   }
 }
 
@@ -130,7 +140,7 @@
 }
 
 .home-text-content {
-  max-width: 680px;
+  max-width: 700px;
 }
 
 
@@ -145,12 +155,6 @@
    margin-top: 10rem;
    letter-spacing: 0.1rem;
    font-size: 3rem;
-}
-
-@media only screen and (max-width: 1269px) {
-  .home-text-content h6 {
-    margin-top: 0rem;
-  }
 }
 
 .home-text-content h3 {
@@ -356,13 +360,6 @@ padding-bottom: 40px;
   justify-content: center;
 }
 
-@media only screen and (max-width: 1350px) {
-  .projects-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 /* <!-- Aqui começa os Contato styles. --> */
 
