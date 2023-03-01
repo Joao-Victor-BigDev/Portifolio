@@ -38,6 +38,7 @@
     text-align: center;
     height: 100vh;
     justify-content: center;
+    transition: 1s;
   }
   .navbar-nav {
     flex-flow: column;
